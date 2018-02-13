@@ -1,38 +1,36 @@
 public class CalandarConverter {
-    int MONDAY=1;
-    int THUSDAY=2;
-    int WENDSDAY=3;
-    int THRUSDAY=4;
-    int FRIDAY=5;
-    int SATURDAY=6;
-    int SUNDAY=7;
-
-
+    static final int MONDAY=1;
+    static final int THUSDAY=2;
+    static final int WENDSDAY=3;
+    static final int THRUSDAY=4;
+    static final int FRIDAY=5;
+    static final int SATURDAY=6;
+    static final int SUNDAY=7;
 
    static String convertDayToString(int dayNumber){
 
         String day= "Poniedziałek";
 
         switch(dayNumber){
-            case 1:
+            case MONDAY:
                 day="Poniedziałek";
                 break;
-            case 2:
+            case THUSDAY:
                 day = "Wtorek";
                 break;
-            case 3:
+            case WENDSDAY:
                 day = "Sroda";
                 break;
-            case 4:
+            case THRUSDAY:
                 day = "Czwartek";
                 break;
-            case 5:
+            case FRIDAY:
                 day = "Piątek";
                 break;
-            case 6:
+            case SATURDAY:
                 day = "Sobota";
                 break;
-            case 7:
+            case SUNDAY:
                 day = "Niedziela";
                 break;
         }
